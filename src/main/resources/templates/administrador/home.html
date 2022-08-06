@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th:"http://www.thymeleaf.org">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Spring eCommerce</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link th:href="@{vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link th:href="@{css/heroic-features.css}" rel="stylesheet">
+  <link rel="preload" href="@{css/estilos1.css}" as="style"><!--con esto carga mas rapido la hoja de estilos-->
+    <link rel="stylesheet" th:href="@{/css/estilos1.css}">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div th:include="administrador/template_admin.html::header">
+  </div>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <div class="contHeader">
+          <div class="imgHeader">
+              <img class="contNav_contImgen-imagen" src="/images/logo2.png" alt="ElectroTics">
+          </div>
+              
+          <h1>ElectroTics</h1>
+      </div>
+      </header>
+
+      <div class="muestra"><!--Muesrtras-->
+        
+        <div class="muestra_img muestra_model">
+            <img src="images/modelo.jpg" alt="Modelo">
+        </div>
+
+        <div class="muestra_img muestra_p1"> 
+            <img src="images/p1.jpg" alt="Producto 1">
+        </div>
+
+        <div class="muestra_img muestra_p2">
+            <img src="images/p2.jpg" alt="Producto 2">
+        </div>
+
+        <div class="muestra_img muestra_p3">
+            <img src="images/p3.jpg" alt="Producto 3">
+        </div>
+    </div>
+
+    <!-- Page Features -->
+    <div class="row text-center" id="centrar">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x200" alt="">
+          <div class="card-body">
+            <p class="card-text">Nombre del producto.</p>
+          </div>
+          <div class="card-footer">
+            <a href="productohome.html" class="btn btn-success">Ver producto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card-body">
+            <p class="card-text">Nombre del producto.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-success">Ver producto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card-body">
+            <p class="card-text">Nombre del producto.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-success">Ver producto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card-body">
+            <p class="card-text">Nombre del producto.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-success">Ver producto</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <div th:include="administrador/template_admin.html::footer">
+  </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script th:src="@{vendor/jquery/jquery.min.js}"></script>
+    <script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+  </body>
+
+  </html>
