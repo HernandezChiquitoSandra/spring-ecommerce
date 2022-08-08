@@ -31,4 +31,16 @@ private final Logger logger= LoggerFactory.getLogger(UsuarioController.class);
 		usuarioService.save(usuario);
 		return "redirect:/";
 	}
+	
+	@GetMapping("/login")
+	public String login() {
+		return "usuario/login";
+	}
+	
+	@PostMapping("/acceder")
+	public String acceder(Usuario usuario) {
+		logger.info("Accesos: {}", usuario);
+		
+		return "redirect/";
+	}
 }
